@@ -21,6 +21,8 @@ body {
 }
 
 .cartao__conteudo {
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
     background-color: var(--card-front-color);
     text-align: center;
     /* background-color: aquamarine; */
@@ -36,11 +38,13 @@ body {
     margin: 0.6rem;
     border-radius: 0.6rem;
     font-size: 1vw;
+     backface-visibility: hidden;
 }
 
 .cartao__conteudo p {
     margin-top: 1rem;
     padding: 2rem;
+    margin-top: 4rem;
 }
 
 .cartao__conteudo__pergunta p {
